@@ -1,5 +1,5 @@
 <template>
-  <div id="translaterContainer">
+  <div id="translatorContainer">
     <div id="translateViewer" class="pdfViewer"></div>
 <!--    <div class="pdfViewer singlePageView"></div>-->
   </div>
@@ -10,7 +10,7 @@ import PDFRender from '@/views/pdf/PDFRender'
 import pdfFile from '@/assets/test.pdf'
 const props = defineProps<{id: any}>()
 
-// 页面viewmodel
+// 页面view model
 const {renderPDF } = PDFRender(props)
 
 onMounted(() => {
@@ -21,7 +21,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-#translaterContainer {
+#translatorContainer {
   overflow: hidden;
   position: absolute;
   width: 100%;

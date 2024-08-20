@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import PDFViewer from '@/views/pdf/viewer/PDFViewer.vue'
-import PDFTranslater from '@/views/pdf/translater/PDFTranslater.vue'
+import PDFTranslator from '@/views/pdf/translater/PDFTranslator.vue'
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import PDFTranslater from '@/views/pdf/translater/PDFTranslater.vue'
     <PDFViewer id="viewerContainer"></PDFViewer>
   </div>
   <div class="app-content">
-    <PDFTranslater id="translaterContainer"></PDFTranslater>
+    <PDFTranslator id="translatorContainer"></PDFTranslator>
   </div>
 
   <!--  <RouterView />-->
