@@ -1,0 +1,250 @@
+body, div, p, span, a, img,
+dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+table, thead, tbody, tr, td, th {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #4D396C;
+}
+.app{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+/*顶部导航*/
+.header {
+    width: 100%;
+    height: 138px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 138px;
+    background: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+.header-content{
+    width: 1440px;
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.logo{
+    width: 62px;
+    height: 58px;
+    background: #273864;
+    line-height: 58px;
+    text-align: center;
+    color: white;
+}
+.nav{
+    display: flex;
+    line-height: 58px;
+    list-style: none;
+}
+.nav-item{
+    margin: 0 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #321D1D;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-item .trangle{
+    width: 24px;
+    height: 24px;
+    margin: auto;
+}
+.nav-item.start{
+    width: 120px;
+    height: 46px;
+    margin-left: 30px;
+    border: 2px solid #6A57C8;
+    border-radius: 5px;
+    line-height: 46px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6A57C8;
+}
+/*内容区域*/
+.body{
+    position: relative;
+    top: 138px;
+    height: 2000px;
+}
+.common{
+    padding: 80px 50px 110px 50px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.divider{
+    display: flex;
+    width: 1140px;
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    margin: 0 auto;
+}
+.title{
+    /* 一流的翻译质量 */
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 60px;
+    text-align: center;
+}
+.sub-title{
+    /* 使用当下最好的大语言模型进行翻译，属于AI翻译水平第一梯队 */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin-top: 10px;
+}
+/*上传文档，立即翻译模块*/
+.common.translate{
+   background: #FFFFFF;
+}
+.translate .title{
+    width: 100%;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 75px;
+    text-align: center;
+    color: #48347C;
+}
+.translate .sub-title{
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #6B707A;
+    margin-top: 20px;
+}
+.translate .file-container{
+    box-sizing: border-box;
+    width: 829px;
+    height: 334px;
+    background: #F9F8FE;
+    border: 3px dashed #A898F7;
+    border-radius: 8px;
+    margin: 40px auto 0 auto;
+}
+.translate .drop-image{
+    display: flex;
+    margin-top: 50px;
+}
+.translate .drop-image img{
+    margin: auto;
+}
+.translate .file-container .desc{
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #6A57C8;
+}
+.translate .file-container .sub-desc{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.32px;
+    color: #6A57C8;
+}
+.translate .file-container .tags{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    list-style: none;
+    width: 586px;
+    margin: 80px auto 0 auto;
+}
+.translate .file-container .tags .item{
+    display: flex;
+    align-items: center;
+    padding: 6px 12px 6px 8px;
+    background: #6A57C8;
+    border-radius: 4px;
+    line-height: 36px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.translate .file-container .tags .item img{
+    width: 20px;
+    height: 20px;
+}
+/*翻译质量模块*/
+.common.quality{
+
+}
+.quality .content{
+    width: 772px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px auto 0 auto;
+}
+.quality .content .item{
+    width: 272px;
+}
+.quality .promot-title{
+    margin-top: 14px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-weight: 600;
+    font-size: 24px;
+}
+.quality .promot-title img{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+.quality .promot-desc{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+}
+/*排版样式模块*/
+.common.formatting{
+
+}
+.formatting .sample{
+    margin-top: 100px;
+}
+.formatting .sample .promot-title{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.formatting .sample .viewer{
+    width: 919px;
+    height: 523px;
+    background: rgba(217, 217, 217, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 32px;
+    margin: 15px auto 0 auto;
+}
